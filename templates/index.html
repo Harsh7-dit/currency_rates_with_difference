@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>X-Rates Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>X-Rates Scraper</h1>
+
+    <h2>📥 Download CSV for Specific Date</h2>
+    <form action="/download" method="post">
+        <input type="date" name="date" required>
+        <button type="submit">Download CSV</button>
+    </form>
+
+    <h2>🔁 Compare Two Dates</h2>
+    <form action="/compare" method="post">
+        <label>First Date:</label>
+        <input type="date" name="date1" required>
+        <label>Second Date:</label>
+        <input type="date" name="date2" required>
+        <button type="submit">Compare & Download Difference</button>
+    </form>
+</body>
+</html>
